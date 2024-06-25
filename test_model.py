@@ -35,7 +35,7 @@ with open('encoder.pkl', 'rb') as f:
     encoder = pickle.load(f)
 
 # Example input text
-input_text = 'Global stocks rose on Monday as investors anticipated a strong earnings season and looked forward to key economic data releases later this week. The S&P 500 and Nasdaq both reached record highs, driven by gains in technology and consumer discretionary stocks. Investors are particularly optimistic about earnings reports from major tech companies like Apple, Amazon, and Microsoft. Additionally, the Federal Reserve is set to meet later this week, and investors are keenly awaiting any hints about potential changes to monetary policy. Analysts expect the Fed to maintain its current stance, but any indications of future rate hikes could impact market sentiment. In the bond market, yields remained steady, reflecting investor confidence in the economic'
+input_text = 'The rapid development of telemedicine technologies is making healthcare more accessible, particularly for individuals in remote or underserved areas '
 
 # Preprocess the input text
 cleaned_text = clean_txt(input_text)
