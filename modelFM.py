@@ -14,8 +14,7 @@ import string
 import re
 
 # Load dataset
-df = pd.read_json(r"C:\Users\manod\Desktop\DCModel\News_Category_Dataset_v3.json\News_Category_Dataset_v3.json", lines=True)
-
+df = pd.read_json(r"F:\L2_S2\SEProject\Medical_and_Financial-Text-Classification\News_Category_Dataset_v3.json\News_Category_Dataset_v3.json", lines=True)
 
 # Relabel categories
 def relabel_category(category):
@@ -67,6 +66,10 @@ text_clf = Pipeline([
 ])
 
 text_clf.fit(X_train, y_train)
+
+# Evaluate the model
+accuracy = text_clf.score(X_test, y_test)
+print(f'Accuracy: {accuracy:.4f}')
 
 # Save the model
 with open('model_binary.pkl', 'wb') as f:
